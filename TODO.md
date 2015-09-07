@@ -1,7 +1,5 @@
 ## Server-Side
 
-1. Create the project structure
-1. Choose a resource (superheros, cats, dogs, etc.)
 1. Create the RESTful route structure, based on the resource of your choice:
 1. GET ALL superheros
 1. GET single superhero
@@ -21,3 +19,8 @@
 ## Deployment
 
 1. Deploy to Heroku
+
+## DONE
+
+1. Create the project structure
+1. Choose a resource (superheros, cats, dogs, etc.)
