@@ -1,9 +1,7 @@
 ## Server-Side
 
-1. Create the RESTful route structure, based on the resource of your choice:
-1. GET ALL superheros
 1. GET single superhero
-1. POST ALL superheros
+1. POST ALL pokemon,
 1. PUT single superhero
 1. DELETE single superhero
 1. Setup MongoDB, Mongoose, and define your schema
@@ -12,7 +10,7 @@
 
 ## Client-Side
 
-1. Render a single index.html file, which includes a form for adding (POST) a new superhero. Also, display ALL (GET) superheros below the form.
+1. Render a single index.html file, which includes a form for adding (POST) a new superhero. Also, display ALL (GET)  pokemon, the form.
 1. Handle client-side form validation with HTML5 attributes.s
 1. Handle the form submission with jQuery. This must be a SPA (single page application)
 
@@ -23,4 +21,6 @@
 ## DONE
 
 1. Create the project structure
-1. Choose a resource (superheros, cats, dogs, etc.)
+1. Choose a resource (pokemon)
+1. Create the RESTful route structure, based on the resource of your choice:
+1. GET ALL pokemon
