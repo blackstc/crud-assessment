@@ -11,4 +11,4 @@ var Pokemon = new Schema (
 
 mongoose.model('pokemons', Pokemon);
 
-mongoose.connect('mongodb://localhost/pokemon');
+mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/pokemon");
