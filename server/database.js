@@ -9,6 +9,6 @@ var Pokemon = new Schema (
   }
 );
 
-mongoose.model('pokemon', Pokemon);
+mongoose.model('pokemons', Pokemon);
 
-mongoose.connect('/mongodb://localhost/pokemon');
+mongoose.connect('mongodb://localhost/pokemon');

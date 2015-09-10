@@ -1,18 +1,23 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var router = express.Router();
-var Pokemon = mongoose.model('pokemon');
+var Pokemon = mongoose.model('pokemons');
+
+router.get('/', function(req, res) {
+  res.render('index');
+});
 
 // get all pokemon
 router.get('/pokemon', function(req, res) {
   Pokemon.find(function(err, pokemon){
     res.json(pokemon);
+    console.log(pokemon);
   });
 });
 
 //get SINGLE pokemon
 router.get('/pokemon/:id', function(req, res) {
-  var query = {"_id:": req.params.id};
+  var query = {"_id": req.params.id};
   Pokemon.findOne(query, function(err, pokemon) {
     res.json(pokemon);
   });

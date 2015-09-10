@@ -5,11 +5,44 @@
 
 {% block content %}
 
-  <div class="container">
-
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-
+<form method="post" action="/pokemon">
+  <div class="form-group">
+    <label>Pokemon Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Pokemon Name" required>
   </div>
+  <div class="form-group">
+    <label>Pokemon Ability</label>
+    <input type="text" class="form-control" id="ability" placeholder="Pokemon Ability" required>
+  </div>
+  <div class="form-group">
+    <label>Pokemon Evolution</label>
+    <input type="Number" class="form-control" id="evolution" placeholder="Pokemon Evolution" required>
+  </div>
+
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+<hr><br>
+
+  <div id="super-hero-table">
+
+      <h2>All Pokemon</h2>
+
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Ability</th>
+              <th>Evolution</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody id="all">
+          </tbody>
+        </table>
+      </div>
+
+    </div>
 
 {% endblock %}

@@ -1,3 +1,4 @@
+require('./database');
 // *** main dependencies *** //
 var express = require('express');
 var path = require('path');
