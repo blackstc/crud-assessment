@@ -27,7 +27,7 @@ router.get('/pokemon/:id', function(req, res) {
 router.post('/pokemon', function(req, res) {
   new Pokemon(req.body)
   .save(function(err, pokemon) {
-    res.json(pokemon);
+    res.json({"SUCCESS": pokemon});
   });
 });
 
@@ -37,7 +37,7 @@ router.put('/pokemon/:id', function(req, res) {
   var update = req.body;
   var options = {new: true};
   Pokemon.findOneAndUpdate(query, update, options, function(err, pokemon) {
-    res.json(pokemon);
+    res.json({"UPDATED": pokemon});
   });
 });
 
@@ -45,7 +45,7 @@ router.put('/pokemon/:id', function(req, res) {
 router.delete('/pokemon/:id', function(req, res) {
   var query = {"_id": req.params.id};
   Pokemon.findOneAndRemove(query, function(err, pokemon) {
-    res.json(pokemon);
+    res.json({"REMOVED": pokemon});
   });
 });
 

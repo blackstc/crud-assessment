@@ -9,6 +9,6 @@ var Pokemon = new Schema (
   }
 );
 
-mongoose.model('pokemons', Pokemon);
 
 mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/pokemon");
+module.exports = mongoose.model('pokemons', Pokemon);
