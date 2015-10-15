@@ -16,7 +16,7 @@ describe('Pokemon', function() {
 
   beforeEach(function(done){
     var pokemon = new Pokemon({
-      name: 'Wicke',
+      name: 'Wicket',
       ability: 'awesomeness',
       evolution: 1
     });
